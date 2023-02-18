@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+     {{object.id}}
+{% endblock %}
+
+{% block main %} 
+     <article>
+          <h2>{{object}}</h2>
+     </article>
+     <hr>
+{% endblock %}

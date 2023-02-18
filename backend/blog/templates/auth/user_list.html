@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block main %}
+     {% for user in object_list %}
+          <article>
+               <h2>{{user}}</h2>
+          </article>
+          <hr>
+     {% empty %}
+     {% endfor %}
+{% endblock %}
