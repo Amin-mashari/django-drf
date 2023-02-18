@@ -1,8 +1,12 @@
-# from django.contrib import admin
-# from django.urls import include, path
+from django.urls import include, path
+from .views import ArticleList
 
-# urlpatterns =[
-#     path('api-auth/', include('rest_framework.urls')),
+app_name = 'api'
+
+urlpatterns = [
+
+    path('', ArticleList.as_view(), name='api'),
+]
 #     path('', include('blog.urls')),
 #     path('api/', include('api.urls')),
 # ]
