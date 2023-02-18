@@ -9,7 +9,7 @@ class Article(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     publish = models.DateField(default=timezone.now)
-    created = models.DateTimeField(auto_now_add=True)# when created set time 
+    created = models.DateTimeField(auto_now_add=True) # when created set time 
     updated = models.DateTimeField(auto_now=True) #every time updated, update time
     status = models.BooleanField(default=False)
 
